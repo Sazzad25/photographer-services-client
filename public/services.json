@@ -1,0 +1,158 @@
+[
+    {
+        
+        "service_id": "04",
+        "title": "A Trip Around the Sun",
+        "img": "https://images.unsplash.com/photo-1499417267106-45cebb7187c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGhvdG9ncmFwaGVyfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+        "price": "20.00",
+        "description": "Being a photographer is no easy business; it takes a true artist to capture the emotion of the moment and take pictures that will make people smile for years to come. Oh, and of course, it also requires an amazing camera and a lot of other expensive gear. Tho photos is usually very sweet competition. It have a very important for all human. Actuall every man this photos likes, assume to the large human potential macnitum.",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+    
+        "service_id": "05",
+        "title": "The Mood in words Image",
+        "img": "data:image/jpeg;base64,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",
+        "price": "20.00",
+        "description": "Mood image is a powerfull image.Assume sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        
+        "service_id": "01",
+        "title": "Being Creative Photo",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOHIfc1hI3zxawL94jVlVgDQX83Bms1reqhQ&usqp=CAU",
+        "price": "200.00",
+        "description": "Creative photo is a oustanding for every couple.Everyday veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+    
+        "service_id": "02",
+        "title": "Bracketeers Photography",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrlVYfWSuc3LX_p6dpGRzlGHur9FpqtwP3Sw&usqp=CAU",
+        "price": "150.00",
+        "description": "Photography is good works for alll photographer.Especially veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+    
+        "service_id": "03",
+        "title": "Natural Light Photography",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfNd4AzsFAPKlpZm8LeOUZKqRpeEvPQQMO6Q&usqp=CAU",
+        "price": "30.00",
+        "description": "Natural light photos is a especiall photos for every humans.Actually veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+    
+        "service_id": "06",
+        "title": "Just Shoot Me Photographs",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThPTXCb8vYOiC7XRAJRJfcpbvq396s18YPKQ&usqp=CAU",
+        "price": "20.00",
+        "description": "Being a photographer is no easy business; it takes a true artist to capture.The veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    }
+]
