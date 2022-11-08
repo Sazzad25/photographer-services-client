@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
 const AddServices = () => {
@@ -26,7 +27,7 @@ const AddServices = () => {
 
        
 
-        fetch('https://genius-car-server-fawn.vercel.app/orders', {
+        fetch('http://localhost:5000/pServices/hire', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -38,12 +39,12 @@ const AddServices = () => {
             .then(data => {
                 console.log(data)
                 if(data.acknowledged){
-                    alert('Order placed successfully')
+                    toast.success('hire is successfully')
                     form.reset();
                     
                 }
             })
-            .catch(er => console.error(er));
+            .catch(error => toast.error(error.message))
 
 
     }
