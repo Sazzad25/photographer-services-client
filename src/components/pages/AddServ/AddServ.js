@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
-import ReviewDetails from '../MyReviews/ReviewDetails';
+import ServDetails from '../AddServ/ServDetails.js';
 
-const MyReviews = () => {
+const AddServ = () => {
     const { user } = useContext(AuthContext);
     const [orders, setOrders] = useState([])
 
@@ -56,36 +56,35 @@ const MyReviews = () => {
         })
     }
 
-
     return (
         <div>
-            <h2 className="text-5xl">You have {orders.length} Reviews</h2>
-            <div className="overflow-x-auto w-full">
-                <table className="table w-full">
-                    <thead>
-                        <tr>
-                            <th>
-                            </th>
-                            <th>Name</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    {
-                            orders.map(order => <ReviewDetails
-                                key={order._id}
-                                order={order}
-                                handleDelete={handleDelete}
-                                handleStatusUpdate={handleStatusUpdate}
-                            ></ReviewDetails>)
-                        }
-                    </tbody>
-                </table>
-            </div>
+        <h2 className="text-5xl">You have {orders.length} Reviews</h2>
+        <div className="overflow-x-auto w-full">
+            <table className="table w-full">
+                <thead>
+                    <tr>
+                        <th>
+                        </th>
+                        <th>Name</th>
+                        <th>Job</th>
+                        <th>Favorite Color</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                {
+                        orders.map(order => <ServDetails
+                            key={order._id}
+                            order={order}
+                            handleDelete={handleDelete}
+                            handleStatusUpdate={handleStatusUpdate}
+                        ></ServDetails>)
+                    }
+                </tbody>
+            </table>
         </div>
+    </div>
     );
 };
 
-export default MyReviews;
+export default AddServ;

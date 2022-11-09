@@ -27,7 +27,7 @@ const Header = () => {
         <Link to='/myreviews' className='btn-ghost'>My Reviews</Link>
         </li>
         <li className='font-semibold'>
-        <Link className='btn-ghost'>Add Service</Link>
+        <Link to='/addserv' className='btn-ghost'>Add Service</Link>
         </li>
         <li className='font-semibold'>
         <button onClick={handleLogOut} className='btn-ghost'>Log Out</button>

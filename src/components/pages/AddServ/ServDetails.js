@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const ReviewDetails = ({order,  handleDelete, handleStatusUpdate}) => {
+const ServDetails = ({order,  handleDelete, handleStatusUpdate}) => {
     const { _id, serviceName, phone, customer, price, service, status } = order;
     const [orderService, setOrderService] = useState({})
 
@@ -10,13 +10,12 @@ const ReviewDetails = ({order,  handleDelete, handleStatusUpdate}) => {
             .then(data => setOrderService(data));
     }, [service])
 
-
     return (
         <tr>
             <th>
                 <label>
-                    <button className='btn btn-primary mr-3'>Edit Review</button>
-                    <button onClick={() => handleDelete(_id)} className='btn btn-ghost'>Delete Review</button>
+                    
+                    <button onClick={() => handleDelete(_id)} className='btn btn-ghost'>Cancel Service</button>
                 </label>
             </th>
             <td>
@@ -49,4 +48,4 @@ const ReviewDetails = ({order,  handleDelete, handleStatusUpdate}) => {
     );
 };
 
-export default ReviewDetails;
+export default ServDetails;

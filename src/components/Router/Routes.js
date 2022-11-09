@@ -5,6 +5,7 @@ import Register from "../Register/Register";
 import Blog from "../pages/Blog/Blog";
 import MyReviews from "../pages/MyReviews/MyReviews";
 import AddServices from "../pages/AddServices/AddServices";
+import AddServ from "../pages/AddServ/AddServ";
 
 const { createBrowserRouter } = require("react-router-dom");
 
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
             {
                 path: '/myreviews',
                 element: <MyReviews></MyReviews>
+            },
+
+            {
+                path: '/addserv',
+                element: <AddServ></AddServ>
             },
 
             {

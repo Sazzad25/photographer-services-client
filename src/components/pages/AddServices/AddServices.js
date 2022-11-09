@@ -38,7 +38,7 @@ const AddServices = () => {
             .then(data => {
                 console.log(data)
                 if(data.acknowledged){
-                    toast.success('Order placed successfully')
+                    toast.success('Add reviews successfully')
                     form.reset();
                     
                 }
@@ -64,7 +64,7 @@ const AddServices = () => {
             </div>
             <textarea name="message" className="textarea textarea-bordered h-24 w-full mt-2" placeholder="Your Message" required></textarea>
 
-            <input className='btn' type="submit" value="Place Your Order" />
+            <input className='btn' type="submit" value="Add his Review" />
         </form>
     </div>
     );
