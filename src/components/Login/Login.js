@@ -2,8 +2,6 @@ import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
-// import img from '../../assets/images/login/login.svg';
-// import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import GoogleLogin from '../GoogleLogin/GoogleLogin';
 
 const Login = () => {
@@ -26,20 +24,6 @@ const Login = () => {
           toast.success('Login Success!');
           navigate(from, { replace: true });
          
-
-    //       // get jwt token
-    //  fetch('https://genius-car-server-fawn.vercel.app/jwt',{
-    //   method: 'POST',
-    //   headers: {
-    //     'content-type': 'application/json'
-    //   },
-    //   body: JSON.stringify(currentUser)
-    // })
-    // .then(res => res.json())
-    // .then(data => {
-    //   localStorage.setItem('geniusToken', data.token);
-      
-    // });
           
         })
         .catch(error => toast.error(error.message))

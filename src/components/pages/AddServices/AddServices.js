@@ -27,11 +27,10 @@ const AddServices = () => {
 
        
 
-        fetch('http://localhost:5000/pServices/hire', {
+        fetch('http://localhost:5000/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
-                authorization: `Bearer ${localStorage.getItem('geniusToken')}`
             },
             body: JSON.stringify(order)
         })
@@ -39,7 +38,7 @@ const AddServices = () => {
             .then(data => {
                 console.log(data)
                 if(data.acknowledged){
-                    toast.success('hire is successfully')
+                    toast.success('Order placed successfully')
                     form.reset();
                     
                 }

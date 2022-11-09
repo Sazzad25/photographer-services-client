@@ -23,7 +23,6 @@ const Register = () => {
     .then(result => {
       const user = result.user;
       toast.success('Register Success!');
-    //   setAuthToken(user);
     navigate(from, { replace: true });
       
     })
