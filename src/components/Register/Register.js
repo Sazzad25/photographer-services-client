@@ -4,12 +4,14 @@ import { toast } from 'react-toastify';
 // import { setAuthToken } from '../../api/auth';
 // import img from '../../assets/images/login/login.svg';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 import GoogleLogin from '../GoogleLogin/GoogleLogin';
 
 const Register = () => {
     const {createUser} = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
+    useTitle('Register')
 
     const from = location.state?.from?.pathname || '/';
     const handleSignUp = event =>{

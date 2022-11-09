@@ -1,11 +1,13 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
+import useTitle from '../../../hooks/useTitle';
 import ServDetails from '../AddServ/ServDetails.js';
 
 const AddServ = () => {
     const { user } = useContext(AuthContext);
     const [orders, setOrders] = useState([])
+    useTitle('Add Service')
 
 
     useEffect( () =>{

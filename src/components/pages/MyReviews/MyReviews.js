@@ -1,25 +1,40 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
+import useTitle from '../../../hooks/useTitle';
 import ReviewDetails from '../MyReviews/ReviewDetails';
 
 const MyReviews = () => {
-    const { user } = useContext(AuthContext);
+    const { user, logOut } = useContext(AuthContext);
     const [orders, setOrders] = useState([])
+    useTitle('My Reviews')
 
 
     useEffect( () =>{
-        fetch(`http://localhost:5000/orders?email=${user?.email}`)
-        .then(res => res.json())
-        .then(data => setOrders(data))
-    }, [user?.email])
+        fetch(`http://localhost:5000/orders?email=${user?.email}`, {
+            headers: {
+                authorization: `Bearer ${localStorage.getItem('photoToken')}`
+            }
+        })
+        .then(res => {
+            if(res.status === 401 || res.status === 403){
+                return logOut();
+            }
+            return res.json()
+        })
+        .then(data => {
+            setOrders(data);
+        })
+    }, [user?.email, logOut])
 
     const handleDelete = id =>{
         const proceed = window.confirm('Are you sure, you want to cancel this order');
         if(proceed){
             fetch(`http://localhost:5000/orders/${id}`, {
                 method: 'DELETE',
-                
+                headers: {
+                    authorization: `Bearer ${localStorage.getItem('photoToken')}`
+                }
             })
             .then(res => res.json())
             .then(data => {
@@ -38,6 +53,7 @@ const MyReviews = () => {
             method: 'PATCH', 
             headers: {
                 'content-type': 'application/json',
+                authorization: `Bearer ${localStorage.getItem('photoToken')}`
             },
             body: JSON.stringify({status: 'Approved'})
         })

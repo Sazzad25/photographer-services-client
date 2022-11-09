@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 import GoogleLogin from '../GoogleLogin/GoogleLogin';
 
 const Login = () => {
@@ -9,6 +10,7 @@ const Login = () => {
   const {login} = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
+  useTitle('Login')
 
   const from = location.state?.from?.pathname || '/';
 
@@ -22,7 +24,23 @@ const Login = () => {
         .then(result => {
           const user = result.user;
           toast.success('Login Success!');
-          navigate(from, { replace: true });
+          const currentUser = {
+            email: user.email
+        }
+
+          // get jwt token
+     fetch('http://localhost:5000/jwt',{
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify(currentUser)
+    })
+    .then(res => res.json())
+    .then(data => {
+      localStorage.setItem('photoToken', data.token);
+      navigate(from, { replace: true });
+    });
          
           
         })

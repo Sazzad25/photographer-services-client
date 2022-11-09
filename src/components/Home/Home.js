@@ -1,10 +1,12 @@
 import React from 'react';
+import useTitle from '../../hooks/useTitle';
 import About1 from './About/About1';
 import About2 from './About/About2';
 import Services from './Services/Services';
 import Slider from './Slider/Slider';
 
 const Home = () => {
+    useTitle('Home')
     return (
         <div>
             <Slider></Slider>
