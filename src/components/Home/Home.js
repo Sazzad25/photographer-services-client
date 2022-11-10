@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
 import About1 from './About/About1';
 import About2 from './About/About2';
@@ -13,6 +14,11 @@ const Home = () => {
             <About1></About1>
             <About2></About2>
             <Services></Services>
+            <div>
+            <Link to='/myreviews'>
+            <button className="btn btn-primary mt-3 mb-3">See All</button>
+            </Link>
+            </div>
         </div>
     );
 };

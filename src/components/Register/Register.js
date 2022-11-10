@@ -8,10 +8,15 @@ import useTitle from '../../hooks/useTitle';
 import GoogleLogin from '../GoogleLogin/GoogleLogin';
 
 const Register = () => {
-    const {createUser} = useContext(AuthContext);
+    const {createUser, loading} = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
     useTitle('Register')
+
+    if(loading){
+      return <progress className="progress w-56"></progress>
+  
+    }
 
     const from = location.state?.from?.pathname || '/';
     const handleSignUp = event =>{
@@ -24,6 +29,7 @@ const Register = () => {
     createUser(email, password)
     .then(result => {
       const user = result.user;
+      form.reset();
       toast.success('Register Success!');
     navigate(from, { replace: true });
       

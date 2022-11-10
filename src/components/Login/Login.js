@@ -7,10 +7,15 @@ import GoogleLogin from '../GoogleLogin/GoogleLogin';
 
 const Login = () => {
 
-  const {login} = useContext(AuthContext);
+  const {login, loading} = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   useTitle('Login')
+
+  if(loading){
+    return <progress className="progress w-56"></progress>
+
+  }
 
   const from = location.state?.from?.pathname || '/';
 
@@ -23,7 +28,9 @@ const Login = () => {
         login(email, password)
         .then(result => {
           const user = result.user;
+          form.reset();
           toast.success('Login Success!');
+          
           const currentUser = {
             email: user.email
         }

@@ -15,7 +15,21 @@ const ReviewDetails = ({order,  handleDelete, handleStatusUpdate}) => {
         <tr>
             <th>
                 <label>
-                    <button className='btn btn-primary mr-3'>Edit Review</button>
+                    <div>  
+
+                    {/* The button to open modal */}
+<label htmlFor="my-modal-3" className="btn">Edit Review</label>
+
+{/* Put this part before </body> tag */}
+<input type="checkbox" id="my-modal-3" className="modal-toggle" />
+<div className="modal">
+  <div className="modal-box relative">
+    <label htmlFor="my-modal-3" className="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+    
+    <p className="py-4">Please edit your review</p>
+  </div>
+</div>
+                    </div>
                     <button onClick={() => handleDelete(_id)} className='btn btn-ghost'>Delete Review</button>
                 </label>
             </th>

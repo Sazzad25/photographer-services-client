@@ -4,14 +4,15 @@ import 'react-photo-view/dist/react-photo-view.css';
 import { Link } from 'react-router-dom';
 
 const ServiceCard = ({service}) => {
+  // const card = service.slice(0, 3);
     const {_id, img, price, title, description} = service;
-
+    
    
     return (
         <div className="card card-compact w-96 bg-base-100 shadow-xl">
        <PhotoProvider>
         <PhotoView src={img} >
-        <figure><img src={img} alt="" /></figure>
+        <figure><img src={img} alt="" /></figure> 
         </PhotoView>
        </PhotoProvider>
         <div className="card-body">
@@ -32,6 +33,7 @@ const ServiceCard = ({service}) => {
           </div>
         </div>
       </div>
+      
     );
 };
 
