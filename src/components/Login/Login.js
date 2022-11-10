@@ -7,15 +7,18 @@ import GoogleLogin from '../GoogleLogin/GoogleLogin';
 
 const Login = () => {
 
-  const {login, loading} = useContext(AuthContext);
+  const {login, loading, setLoading} = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   useTitle('Login')
 
-  if(loading){
-    return <progress className="progress w-56"></progress>
+  // if(loading){
+  //   return <progress className="progress w-56"></progress>
 
-  }
+  // }
+  // else{
+  //   setLoading();
+  // }
 
   const from = location.state?.from?.pathname || '/';
 
@@ -29,6 +32,7 @@ const Login = () => {
         .then(result => {
           const user = result.user;
           form.reset();
+         
           toast.success('Login Success!');
           
           const currentUser = {
@@ -36,7 +40,7 @@ const Login = () => {
         }
 
           // get jwt token
-     fetch('http://localhost:5000/jwt',{
+     fetch('https://photo-server-jet.vercel.app/jwt',{
       method: 'POST',
       headers: {
         'content-type': 'application/json'
@@ -52,6 +56,7 @@ const Login = () => {
           
         })
         .catch(error => toast.error(error.message))
+        // setLoading(true);
     }
     
     return (
@@ -59,7 +64,7 @@ const Login = () => {
   <div className="hero-content grid gap-20 md:grid-cols-2 flex-col lg:flex-row">
     <div className="text-center lg:text-left">
     
-      {/* <img className='w-3/4' src={img} alt="" /> */}
+  
     </div>
     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 py-20">
     <h1 className="text-5xl text-center font-bold">Login</h1>
@@ -83,7 +88,7 @@ const Login = () => {
             <input className='btn btn-primary' type="submit" value="Login" />
         </div>
       </form>
-      <p className='text-center'>New to Genius Car <Link className='text-orange-600 font-bold' to='/register'>Register</Link></p>
+      <p className='text-center'>New to Glossy Photo Gallery <Link className='text-orange-600 font-bold' to='/register'>Register</Link></p>
       <GoogleLogin></GoogleLogin>
     </div>
   </div>

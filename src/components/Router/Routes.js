@@ -38,7 +38,7 @@ const router = createBrowserRouter([
             {
                 path: '/addservices/:id',
                 element: <PrivateRoute><AddServices></AddServices></PrivateRoute>,
-                loader: ({params})=> fetch(`http://localhost:5000/pServices/${params.id}`)
+                loader: ({params})=> fetch(`https://photo-server-jet.vercel.app/pServices/${params.id}`)
             },
 
             {

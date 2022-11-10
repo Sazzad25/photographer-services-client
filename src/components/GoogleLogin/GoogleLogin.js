@@ -19,9 +19,10 @@ const GoogleLogin = () => {
         .then(result => {
             const user = result.user;
             console.log(user);
-            toast.success('Login Success!');
+            toast.success(' Success!');
             // setAuthToken(user);
             navigate(from, { replace: true });
+            // navigate('/login');
         })
         .catch(error => toast.error(error.message))
     }

@@ -5,7 +5,7 @@ const ServDetails = ({order,  handleDelete, handleStatusUpdate}) => {
     const [orderService, setOrderService] = useState({})
 
     useEffect(() => {
-        fetch(`http://localhost:5000/pServices/${service}`)
+        fetch(`https://photo-server-jet.vercel.app/pServices/${service}`)
             .then(res => res.json())
             .then(data => setOrderService(data));
     }, [service])

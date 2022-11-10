@@ -4,10 +4,10 @@ Glossy Photo Gallery
 
 
 ## Live Site Link
-Hosted in Firebase -> 
+Hosted in Firebase -> https://practice-mil-11.web.app/
 
 
-### Projet Deatils
+### Project Details
 
 * A simple React app built with React, React Router Dom and Firebase.
 
