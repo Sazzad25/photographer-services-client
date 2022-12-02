@@ -12,12 +12,13 @@ const About2 = () => {
           </div>
           <div className='w-1/2'>
             <p className=' text-2xl font-bold text-orange-600'>About Us</p>
-            <h1 className="my-5 text-5xl font-bold">We are qualified <br />
-             & of experience <br/>
-             in this field</h1>
-            <p className="py-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour or randomised words which don't look even slightly believable.</p>
-            <p className='py-6'>the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-            <button className="btn btn-primary">Get More Info</button>
+            <h1 className="my-5 text-5xl font-bold">WHAT IT IS <br />
+            & AND WHY YOU <br/>
+            NEED IT</h1>
+
+            <p className="py-6">The demand for Photographers in the world today is unparalleled, any type of event requires one or more skilled photographers.</p>
+            <p className='py-6'>Because photographers can take much better pictures than the average camera user, the role of a skilled photographer is immense in making.</p>
+            {/* <button className="btn btn-primary">Get More Info</button> */}
           </div>
         </div>
       </div>
