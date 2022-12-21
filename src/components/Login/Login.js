@@ -89,7 +89,7 @@ const Login = () => {
         </div>
       </form>
       <p className='text-center'>New to Glossy Photo Gallery <Link className='text-orange-600 font-bold' to='/register'>Register</Link></p>
-      <GoogleLogin></GoogleLogin>
+      {/* <GoogleLogin></GoogleLogin> */}
     </div>
   </div>
         </div>

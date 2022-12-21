@@ -34,8 +34,8 @@ const Register = () => {
       const user = result.user;
       form.reset();
       toast.success('Register Success!');
-      // navigate(from, { replace: true });
-      navigate('/login');
+      navigate(from, { replace: true });
+      // navigate('/login');
       
     })
     .catch(error => toast.error(error.message))
@@ -76,7 +76,7 @@ const Register = () => {
         </div>
       </form>
       <p className='text-center'>All ready have an account <Link className='text-orange-600 font-bold' to='/login'>Login</Link></p>
-      <GoogleLogin></GoogleLogin>
+      {/* <GoogleLogin></GoogleLogin> */}
     </div>
   </div>
         </div>
