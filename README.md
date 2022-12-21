@@ -4,8 +4,7 @@ Glossy Photo Gallery
 
 
 ## Live Site Link
-Hosted in Firebase -> https://practice-mil-11.web.app/
-
+Hosted in Firebase -> https://practice-mil-11.web.app
 
 ### Project Details
 
