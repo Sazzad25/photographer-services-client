@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 // import img from '../../assets/images/login/login.svg';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import useTitle from '../../hooks/useTitle';
-import GoogleLogin from '../GoogleLogin/GoogleLogin';
+// import GoogleLogin from '../GoogleLogin/GoogleLogin';
 
 const Register = () => {
     const {createUser, loading, setLoading} = useContext(AuthContext);

@@ -3,7 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import useTitle from '../../hooks/useTitle';
-import GoogleLogin from '../GoogleLogin/GoogleLogin';
+// import GoogleLogin from '../GoogleLogin/GoogleLogin';
 
 const Login = () => {
 
